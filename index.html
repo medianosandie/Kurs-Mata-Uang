@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kurs mata uang</title>
+</head>
+<body>
+
+  <custom-header></custom-header>
+  <main>
+    <div class="container p-5 mt-5">
+      <div class="row border rounded p-5">
+        <section class="col-md border mx-2">
+
+          <div class="row" id="input-mata-uang-asal">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">mata uang asal</label>
+              </div>
+              <select class="custom-select" id="mataUangAsal">
+                <option selected id="nilaiDefault">Choose...</option>
+                <option value="IDR">Indonesian Rupiah</option>
+                <option value="USD">US Dollar</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="CNY">Chinese Yuan</option>
+                <option value="THB">Thailand Baht</option>
+                <option value="SGD">Singaporean Dollar</option>
+                <option value="GBP">GB Pound</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="row" id="input-mata-uang-tujuan">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">mata uang tujuan</label>
+              </div>
+              <select class="custom-select" id="mataUangTujuan">
+                <option selected id="nilaiDefault">Choose...</option>
+                <option value="IDR">Indonesian Rupiah</option>
+                <option value="USD">US Dollar</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="CNY">Chinese Yuan</option>
+                <option value="THB">Thailand Baht</option>
+                <option value="SGD">Singaporean Dollar</option>
+                <option value="GBP">GB Pound</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-success mr-3" id="buttonOK">OK</button>
+          <button type="button" class="btn btn-danger" id="buttonReset">RESET</button>
+
+          <div class="row">
+            <div id="list-kurs">
+              <h2>list kurs terhadap rupiah</h2>
+              <ul></ul>
+              <button class="btn btn-success"id="refresh">refresh</button>
+            </div>
+          </div>
+            
+        </section>
+
+        <section class="col-md border rounded p-5" id="containerHasil">
+          <div class="col">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="mataUang">$</span>
+                </div>
+                <input type="text" class="form-control" id="nominalAsal">
+            </div>
+            <button type="button" class="btn btn-success mr-3" id="konversi">konversi</button>
+            <button type="button" class="btn btn-danger" id="hapus">hapus</button>
+          </div>
+  
+          <div class="col my-3" style="text-align: center;font-size: large;font-weight: bolder;">
+            =
+          </div>
+  
+          <div class="col">
+            <h3 id="mataUangHasil"></h3>
+            <div class="kotak border rounded" id="kurs" style="padding: 1em 0;font-size: 20px;font-weight: bolder;">0</div>
+          </div>
+  
+        </section>
+      </div>
+      
+    </div>  
+  </main>
+  
+  <script src="dist/bundle.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#hasil{
+    min-height: 30vh;
+}
+
+h3{
+    text-align: center;
+}
+
+.col-2 , .kotak{
+    text-align: center;
+    
+}
+
+#containerHasil{
+    display: block;
+    width: 50%;
+}
+
+#list-kurs{
+    text-align: center;
+}
+
+#list-kurs ul{
+    width: 25vw;
+    max-height: 200px;
+    margin: 2em auto;
+    overflow-y: scroll;
+    text-align: left;
+    border: solid black 1px;
+    border-radius: 5px ;
+    padding: 1em 5em;
+}
+
+#list-kurs li{
+    margin-left: 4em;
+    margin: .5em 0;
+}
+
+.list-kurs{
+    margin: auto;
+}
+
